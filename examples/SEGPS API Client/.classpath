@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/json-20140107.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/jersey-client-1.19.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/jersey-core-1.19.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SEGPS API Client/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
