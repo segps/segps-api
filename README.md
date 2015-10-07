@@ -15,4 +15,3 @@ Some sample code can be found on the [Examples](examples/) page.
 + SEGPS API Reference
     - [Project](reference/project.md)
     - [Vulnerability](reference/vulnerability.md)
-    - [Vulnerability Info](reference/vulnerability-info.md)
