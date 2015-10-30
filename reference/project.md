@@ -29,26 +29,46 @@ A Project represents an open-source project available in the Maven repository wh
 
 ### Making API Calls
 These URLs allow you to access the search functionality of SE-GPS from any non-browser user agent. Note that the "wt" parameter present in every URL determines the format of the results. 
+
 Setting "wt" equal to "json" will provide a JSON response, while setting "wt" equal to "xml" will provide the same response formatted as an XML document. 
+
 Another common parameter is "rows," which limits the number of results returned by the server. 
-The "detailed" parameter limits the details returned. Setting "detailed" to "false", will return only the basic details about the project(s); setting the value to "true" will return extra details such as transitive dependencies (Transitive dependency depth are limited to X at the moment).
+
+The "detailed" parameter limits the details returned. Setting "detailed" to "false", will return only the basic details about the project(s); setting the value to "true" will return extra details such as transitive dependencies (Transitive dependency depth are limited to 2 at the moment).
 
 NOTE: Most of the URLs in this document have been URL-decoded for the sake of readability. They should work when pasted into a web browser, but you may have to URL-encode them to function when called programmatically
 
 
 To get a list of Projects:
 ```shell
-curl https://aseg.cs.concordia.ca/segps/project/list?rows={rows}&wt={wt}&detailed={detailed}
+https://aseg.cs.concordia.ca/segps/project/list?rows={rows}&wt={wt}
 ```
 
 To search project(s) based on criteria:
+
+	1. Search by GAV (groupID, artifactId & version)
 ```shell
-curl https://aseg.cs.concordia.ca/segps/search/project/select?{searchQuery}&rows={rows}&wt={wt}&detailed={detailed}
+https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&v={version}&rows={rows}&wt={wt}
+```
+
+	2. Search by AV (artifactId & version)
+```shell
+https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&v={version}&rows={rows}&wt={wt}
+```
+
+	3. Search by A (artifactId)
+```shell
+https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&rows={rows}&wt={wt}
+```
+
+	4. Search by cpeID
+```shell
+https://aseg.cs.concordia.ca/segps/search/project/select?cpe={cpeID}&rows={rows}&wt={wt}
 ```
 
 
 To get a single Project:
 ```shell
-curl https://aseg.cs.concordia.ca/segps/project/{id}&wt={wt}&detailed={detailed}
+https://aseg.cs.concordia.ca/segps/project/{id}&wt={wt}&detailed={detailed}
 ```
 
