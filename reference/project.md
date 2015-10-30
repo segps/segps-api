@@ -39,35 +39,35 @@ The "detailed" parameter limits the details returned. Setting "detailed" to "fal
 NOTE: Most of the URLs in this document have been URL-decoded for the sake of readability. They should work when pasted into a web browser, but you may have to URL-encode them to function when called programmatically
 
 
-To get a list of Projects:
+#### To get a list of Projects:
 ```shell
 https://aseg.cs.concordia.ca/segps/project/list?rows={rows}&wt={wt}
 ```
 
-To search project(s) based on criteria:
+#### To search project(s) based on criteria:
 
-	1. Search by GAV (groupID, artifactId & version)
+##### Search by GroupID, ArtifactId & Version
 ```shell
 https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&v={version}&rows={rows}&wt={wt}
 ```
 
-	2. Search by AV (artifactId & version)
+##### Search by ArtifactId & Version
 ```shell
 https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&v={version}&rows={rows}&wt={wt}
 ```
 
-	3. Search by A (artifactId)
+##### Search by ArtifactId
 ```shell
 https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&rows={rows}&wt={wt}
 ```
 
-	4. Search by cpeID
+##### Search by cpeID
 ```shell
 https://aseg.cs.concordia.ca/segps/search/project/select?cpe={cpeID}&rows={rows}&wt={wt}
 ```
 
 
-To get a single Project:
+#### To get a single Project:
 ```shell
 https://aseg.cs.concordia.ca/segps/project/{id}&wt={wt}&detailed={detailed}
 ```
