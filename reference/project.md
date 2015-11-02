@@ -51,9 +51,19 @@ https://aseg.cs.concordia.ca/segps/project/list?rows={rows}&wt={wt}
 https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&v={version}&rows={rows}&wt={wt}
 ```
 
+##### Search by GroupID & ArtifactId
+```shell
+https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&rows={rows}&wt={wt}
+```
+
 ##### Search by ArtifactId & Version
 ```shell
 https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&v={version}&rows={rows}&wt={wt}
+```
+
+##### Search by GroupId
+```shell
+https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&rows={rows}&wt={wt}
 ```
 
 ##### Search by ArtifactId
