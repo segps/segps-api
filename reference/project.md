@@ -41,44 +41,44 @@ NOTE: Most of the URLs in this document have been URL-decoded for the sake of re
 
 #### To get a list of Projects:
 ```shell
-https://aseg.cs.concordia.ca/segps/project/list?rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/project/list?rows={rows}&wt={wt}
 ```
 
 #### To search project(s) based on criteria:
 
 ##### Search by GroupID, ArtifactId & Version
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&v={version}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?g={groupID}&a={artifactID}&v={version}&rows={rows}&wt={wt}
 ```
 
 ##### Search by GroupID & ArtifactId
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&a={artifactID}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?g={groupID}&a={artifactID}&rows={rows}&wt={wt}
 ```
 
 ##### Search by ArtifactId & Version
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&v={version}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?a={artifactID}&v={version}&rows={rows}&wt={wt}
 ```
 
 ##### Search by GroupId
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?g={groupID}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?g={groupID}&rows={rows}&wt={wt}
 ```
 
 ##### Search by ArtifactId
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?a={artifactID}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?a={artifactID}&rows={rows}&wt={wt}
 ```
 
 ##### Search by cpeID
 ```shell
-https://aseg.cs.concordia.ca/segps/search/project/select?cpe={cpeID}&rows={rows}&wt={wt}
+https://aseg.cs.concordia.ca/segps-rest/search/project/select?cpe={cpeID}&rows={rows}&wt={wt}
 ```
 
 
 #### To get a single Project:
 ```shell
-https://aseg.cs.concordia.ca/segps/project/{id}&wt={wt}&detailed={detailed}
+https://aseg.cs.concordia.ca/segps-rest/project/{id}&wt={wt}&detailed={detailed}
 ```
 
