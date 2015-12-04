@@ -30,9 +30,9 @@ A Project represents an open-source project available in the Maven repository wh
 ### Making API Calls
 These URLs allow you to access the search functionality of SE-GPS from any non-browser user agent. Note that the "wt" parameter present in every URL determines the format of the results. 
 
-Setting "wt" equal to "json" will provide a JSON response, while setting "wt" equal to "xml" will provide the same response formatted as an XML document. 
+Setting "wt" equal to "json" (wt=json) will provide a JSON response, while setting "wt" equal to "xml" will provide the same response formatted as an XML document. 
 
-Another common parameter is "rows," which limits the number of results returned by the server. 
+Another common parameter is "rows", which limits the number of results returned by the server. Example, rows=10 will return only 10 results. 
 
 The "detailed" parameter limits the details returned. Setting "detailed" to "false", will return only the basic details about the project(s); setting the value to "true" will return extra details such as transitive dependencies (Transitive dependency depth are limited to 2 at the moment).
 
